@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Container } from '@mui/material';
+import Image from 'next/image';
 
 export const Section = styled(Container)`
   margin-bottom: 100px;
@@ -21,7 +22,7 @@ export const Section = styled(Container)`
   }
 `;
 
-export const Img = styled.img`
+export const Img = styled(Image)`
   object-fit: cover;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
