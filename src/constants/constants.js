@@ -12,9 +12,9 @@ export const myworks = [
     title: 'Art',
     description: 'Cradle of Arts. ',
     image: '/images/Art.jpg',
-    tags: ['React', 'JavaScript'],
+    tags: ['MongoDB', 'Express', 'React', 'Node'],
     source: 'https://github.com/atuikhar/AteoArtPortfolio',
-    visit: 'https://google.com',
+    visit: 'https://ateoart.herokuapp.com/',
     id: 1,
   },
 ];
