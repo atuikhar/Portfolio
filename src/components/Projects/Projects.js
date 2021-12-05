@@ -24,10 +24,7 @@ const Project = () => (
       {myworks.map((p, i) => {
         return (
           <BlogCard key={i}>
-            {['Art', 'MiniShop', 'Shop'].map((img) => {
-              console.log(img);
-              return <Img src={`/${img}.jpg`} height={200} width={400} />;
-            })}
+            <Img src={p.image} height={200} width={400} />
             <TitleContent>
               <HeaderThree title>{p.title}</HeaderThree>
             </TitleContent>
