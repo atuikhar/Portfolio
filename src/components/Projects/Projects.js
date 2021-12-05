@@ -25,6 +25,7 @@ const Project = () => (
         return (
           <BlogCard key={i}>
             {['Art', 'MiniShop', 'Shop'].map((img) => {
+              console.log(img);
               return <Img src={`/${img}.jpg`} height={200} width={400} />;
             })}
             <TitleContent>
