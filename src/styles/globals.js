@@ -17,7 +17,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     width: 100vw;
     height: 100vh;
-    font-family: 'Roboto, sans-serif';
+    font-family: ${(props) => props.theme.fonts.title}
     font-size: 25px;
     background: #AA076B;
     background: -webkit-linear-gradient(to right, #61045F, #AA076B);

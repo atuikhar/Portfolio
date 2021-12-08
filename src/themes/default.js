@@ -1,8 +1,8 @@
 export default {
   // Temp fonts
   fonts: {
-    title: 'Roboto , sans-serif',
-    main: 'Roboto, sans-serif',
+    title: 'Lilita One , cursive',
+    main: 'Lilita One , cursive',
   },
   // Colors for layout
   colors: {
