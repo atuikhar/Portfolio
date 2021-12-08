@@ -25,7 +25,7 @@ const Project = () => (
           <BlogCard key={i}>
             <Img src={p.image} height={200} width={400} />
             <TitleContent>
-              <HeaderThree title>{p.title}</HeaderThree>
+              <HeaderThree>{p.title}</HeaderThree>
             </TitleContent>
             <CardInfo className='card-info'>{p.description}</CardInfo>
             <div>
