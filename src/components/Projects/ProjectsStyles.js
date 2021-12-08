@@ -64,13 +64,13 @@ export const SectionTitle = styled.h2`
 export const GridContainer = styled(Container)`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 3rem;
-  column-gap: 2rem;
-  row-gap: 3rem;
-  @media ${(props) => props.theme.breakpoints.sm} {
+  padding: 48px;
+  column-gap: 32px;
+  row-gap: 48px;
+  @media ${(props) => props.theme.breakpoints.lg} {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 32px;
     padding-bottom: 0;
   }
 `;
@@ -78,6 +78,7 @@ export const BlogCard = styled.div`
   border-radius: 30px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
+  padding-bottom: 20px;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
@@ -92,32 +93,20 @@ export const HeaderThree = styled.h3`
   font-weight: 500;
   letter-spacing: 2px;
   color: rgba(170, 7, 107, 1);
-
-  padding: 0.5rem 0;
-  font-size: ${(props) => (props.title ? '3rem' : '2rem')};
-`;
-
-export const Hr = styled.hr`
-  width: 50px;
-  height: 3px;
-  margin: 20px auto;
-  border: 0;
-  background: #aa076b;
-  background: -webkit-linear-gradient(to right, #61045f, #aa076b);
-  background: linear-gradient(to right, #61045f, #aa076b);
+  padding: 8px 0;
+  font-size: 20px;
 `;
 
 export const CardInfo = styled.p`
   width: 100%;
-  padding: 0 50px;
+  padding: 0 20px;
   color: rgba(170, 7, 107, 1);
-
-  font-style: 2rem;
+  font-size: 15px;
   font-weight: bold;
   line-height: 24px;
   text-align: center;
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0.3rem;
+    padding: 10px;
   }
 `;
 
@@ -126,19 +115,18 @@ export const UtilityList = styled.ul`
   padding: 0;
   display: flex;
   justify-content: space-around;
-  margin: 2.5rem 0;
+  margin: 5px;
 `;
 
 export const ExternalLinks = styled.a`
   color: #d4c0c0;
-  font-size: 1.6rem;
+  font-size: 10px;
   font-weight: bold;
-
-  padding: 1rem 1.5rem;
+  padding: 10px 10px;
   background: #aa076b;
   background: -webkit-linear-gradient(to right, #61045f, #aa076b);
   background: linear-gradient(to right, #61045f, #aa076b);
-  border-radius: 15px;
+  border-radius: 24px;
   transition: 0.5s;
   &:hover {
     background: #aa076b;
@@ -148,12 +136,15 @@ export const ExternalLinks = styled.a`
 export const TagList = styled.ul`
   display: flex;
   justify-content: space-around;
-  padding: 2rem;
+  padding: 32px;
+
+  }
 `;
 export const Tag = styled.li`
-  /* color: #d8bfbf; */
   color: rgba(170, 7, 107, 1);
-
-  font-size: 1.5rem;
+  font-size: 15px;
   font-weight: bold;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: 10px;
 `;
