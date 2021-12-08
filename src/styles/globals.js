@@ -19,7 +19,7 @@ const GlobalStyles = createGlobalStyle`
     height: 100vh;
     
     font-family: ${(props) => props.theme.fonts.main};
-    font-size: 1.6rem;
+    font-size: 25px;
     background: #AA076B;
     background: -webkit-linear-gradient(to right, #61045F, #AA076B);
     background: linear-gradient(to right, #61045F, #AA076B);
