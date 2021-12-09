@@ -40,11 +40,6 @@ export const SectionTitle = styled(motion.h2)`
   font-size: 30px;
   font-size: ${(props) => (props.main ? '65px' : '56px')};
   line-height: ${(props) => (props.main ? '72px' : '56px')};
-  /* background: linear-gradient(
-    121.57deg,
-    #ffffff 18.77%,
-    rgba(255, 255, 255, 0.66) 60.15%
-  ); */
   background: rgba(26, 31, 41, 1);
   background-clip: border-box;
   -webkit-background-clip: text;

@@ -74,7 +74,7 @@ export const GridContainer = styled(Container)`
     padding-bottom: 0;
   }
 `;
-export const BlogCard = styled.div`
+export const Card = styled.div`
   border-radius: 30px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
@@ -89,7 +89,7 @@ export const TitleContent = styled.div`
   width: 100%;
 `;
 
-export const HeaderThree = styled.h3`
+export const Header = styled.h3`
   font-weight: 500;
   letter-spacing: 2px;
   color: rgba(170, 7, 107, 1);
@@ -110,7 +110,7 @@ export const CardInfo = styled.p`
   }
 `;
 
-export const UtilityList = styled.ul`
+export const List = styled.ul`
   list-style-type: none;
   padding: 0;
   display: flex;

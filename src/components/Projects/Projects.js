@@ -3,29 +3,29 @@ import React from 'react';
 import {
   Section,
   SectionTitle,
-  BlogCard,
+  Card,
   CardInfo,
   ExternalLinks,
   GridContainer,
-  HeaderThree,
+  Header,
   Tag,
   TagList,
   TitleContent,
-  UtilityList,
+  List,
   Img,
 } from './ProjectsStyles';
 import { myworks } from '../../constants/constants';
 
 const Project = () => (
-  <Section nopadding id='project'>
+  <Section id='project'>
     <SectionTitle>Projects</SectionTitle>
     <GridContainer>
       {myworks.map((p, i) => {
         return (
-          <BlogCard key={i}>
+          <Card key={i}>
             <Img src={p.image} height={200} width={400} />
             <TitleContent>
-              <HeaderThree>{p.title}</HeaderThree>
+              <Header>{p.title}</Header>
             </TitleContent>
             <CardInfo className='card-info'>{p.description}</CardInfo>
             <div>
@@ -35,10 +35,10 @@ const Project = () => (
                 })}
               </TagList>
             </div>
-            <UtilityList>
+            <List>
               <ExternalLinks href={p.source}>Source Code</ExternalLinks>
-            </UtilityList>
-          </BlogCard>
+            </List>
+          </Card>
         );
       })}
     </GridContainer>
