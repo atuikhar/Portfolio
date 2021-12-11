@@ -2,11 +2,10 @@ import styled from 'styled-components';
 import { Container } from '@mui/material';
 import Image from 'next/image';
 
-export const Section = styled.div`
+export const Section = styled(Container)`
   margin-bottom: ${(props) => props.theme.spacing.large};
   padding: ${(props) => props.theme.spacing.large};
   background: ${(props) => props.theme.colors.background};
-  box-shadow: 3px 3px 20px rgba(80, 78, 78, 1);
   border-radius: 20px;
   @media ${(props) => props.theme.breakpoints.md} {
     padding: 24px 48px 0;
@@ -57,7 +56,7 @@ export const GridContainer = styled(Container)`
   padding: ${(props) => props.theme.spacing.large};
   column-gap: ${(props) => props.theme.spacing.medium};
   row-gap: ${(props) => props.theme.spacing.large};
-  @media ${(props) => props.theme.breakpoints.lg} {
+  @media ${(props) => props.theme.breakpoints.md} {
     display: flex;
     flex-direction: column;
     padding: ${(props) => props.theme.spacing.small};
