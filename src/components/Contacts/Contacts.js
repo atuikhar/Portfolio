@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { Grid, TableCell } from '@mui/material';
 import { Section, SectionText, SectionTitle } from './ContactStyles';
 import {
-  FaRegArrowAltCircleUp,
   FaGithubSquare,
   FaTwitter,
   FaLinkedin,
@@ -108,11 +107,6 @@ const Contacts = (props) => (
         </TableCell>
       </Grid>
     </Grid>
-    <div style={{ textAlign: 'end', paddingTop: '20px' }}>
-      <Link href='#top'>
-        <FaRegArrowAltCircleUp size={50} color='#a20869' />
-      </Link>
-    </div>
   </Section>
 );
 

@@ -56,7 +56,7 @@ export const GridContainer = styled(Container)`
   padding: ${(props) => props.theme.spacing.large};
   column-gap: ${(props) => props.theme.spacing.medium};
   row-gap: ${(props) => props.theme.spacing.large};
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media ${(props) => props.theme.breakpoints.lg} {
     display: flex;
     flex-direction: column;
     padding: ${(props) => props.theme.spacing.small};

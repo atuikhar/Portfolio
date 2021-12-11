@@ -26,6 +26,33 @@ export const myworks = [
     visit: 'https://thriftshop-1.herokuapp.com/',
     id: 1,
   },
+  {
+    title: 'Shop(BCA Project)',
+    description: 'Online Shop. ',
+    image: '/Shop.jpg',
+    tags: ['JavaScript', 'Express', 'Node'],
+    source: 'https://github.com/atuikhar/Shop-BCA-Project',
+    visit: 'https://thriftshop-1.herokuapp.com/',
+    id: 1,
+  },
+  {
+    title: 'Shop(BCA Project)',
+    description: 'Online Shop. ',
+    image: '/Shop.jpg',
+    tags: ['JavaScript', 'Express', 'Node'],
+    source: 'https://github.com/atuikhar/Shop-BCA-Project',
+    visit: 'https://thriftshop-1.herokuapp.com/',
+    id: 1,
+  },
+  {
+    title: 'Shop(BCA Project)',
+    description: 'Online Shop. ',
+    image: '/Shop.jpg',
+    tags: ['JavaScript', 'Express', 'Node'],
+    source: 'https://github.com/atuikhar/Shop-BCA-Project',
+    visit: 'https://thriftshop-1.herokuapp.com/',
+    id: 1,
+  },
 ];
 
 export const tech = [
