@@ -53,11 +53,11 @@ export const SectionTitle = styled.h2`
 
 export const GridContainer = styled(Container)`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   padding: ${(props) => props.theme.spacing.large};
   column-gap: ${(props) => props.theme.spacing.medium};
   row-gap: ${(props) => props.theme.spacing.large};
-  @media ${(props) => props.theme.breakpoints.lg} {
+  @media ${(props) => props.theme.breakpoints.md} {
     display: flex;
     flex-direction: column;
     padding: ${(props) => props.theme.spacing.small};
