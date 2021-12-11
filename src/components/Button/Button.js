@@ -4,11 +4,11 @@ import { Btn, SectionText } from './ButtonSyles';
 export const GlobalButton = ({ title, link }) => {
   return (
     <div>
-      <Btn>
-        <Link href={link}>
+      <Link href={link}>
+        <Btn>
           <SectionText>{title}</SectionText>
-        </Link>
-      </Btn>
+        </Btn>
+      </Link>
     </div>
   );
 };
