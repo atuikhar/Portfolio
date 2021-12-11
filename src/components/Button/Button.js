@@ -1,13 +1,13 @@
 import Link from 'next/link';
-import { Btn, SectionText } from './ButtonSyles';
+import { Button, Btn, SectionText } from './ButtonSyles';
 
 export const GlobalButton = ({ title, link }) => {
   return (
     <div>
       <Link href={link}>
-        <Btn>
+        <Button>
           <SectionText>{title}</SectionText>
-        </Btn>
+        </Button>
       </Link>
     </div>
   );

@@ -6,14 +6,6 @@ export const Section = styled(Container)`
   display: flex;
   justify-content: center;
   height: 100%;
-  @media ${(props) => props.theme.breakpoints.md} {
-    flex-direction: column;
-  }
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    width: calc(100vw - 32px);
-    flex-direction: column;
-  }
 `;
 
 export const HeroSection = styled(Container)`
