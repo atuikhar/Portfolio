@@ -15,7 +15,6 @@ import {
   Img,
 } from './ProjectsStyles';
 import { myworks } from '../../constants/constants';
-import Shop from '../../../public/Shop.jpg';
 
 const Project = () => (
   <>
@@ -27,7 +26,7 @@ const Project = () => (
             {myworks.map((p, i) => {
               return (
                 <Card key={i}>
-                  <Img src={Shop} height={200} width={400} />
+                  <Img src={p.image} height={200} width={400} />
                   <TitleContent>
                     <Header>{p.title}</Header>
                   </TitleContent>
