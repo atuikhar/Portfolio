@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Container } from '@mui/material';
 import Image from 'next/image';
 
-export const Section = styled(Container)`
+export const Section = styled.div`
   margin-bottom: ${(props) => props.theme.spacing.large};
   padding: ${(props) => props.theme.spacing.large};
   background: ${(props) => props.theme.colors.background};
@@ -57,7 +57,7 @@ export const GridContainer = styled(Container)`
   padding: ${(props) => props.theme.spacing.large};
   column-gap: ${(props) => props.theme.spacing.medium};
   row-gap: ${(props) => props.theme.spacing.large};
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media ${(props) => props.theme.breakpoints.lg} {
     display: flex;
     flex-direction: column;
     padding: ${(props) => props.theme.spacing.small};

@@ -24,7 +24,7 @@ const Project = () => (
         {myworks.map((p, i) => {
           return (
             <Card key={i}>
-              <Img src={p.image} height={200} width={400} />
+              <Img src={p.image} height={200} width={400} layout='responsive' />
               <TitleContent>
                 <Header>{p.title}</Header>
               </TitleContent>
