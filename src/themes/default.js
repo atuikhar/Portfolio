@@ -1,14 +1,25 @@
 export default {
   fonts: {
-    title: 'Lilita One , cursive',
     main: 'Lilita One , cursive',
   },
+  typography: {
+    header: '6rem',
+    text: '3rem',
+    body: '1.5rem',
+    p: '0.9rem',
+  },
+  weight: {
+    bold: 'bold',
+  },
+  spacing: {
+    small: '12px',
+    medium: '24px',
+    large: '50px',
+  },
   colors: {
-    primary1: 'hsl(204,23.8%,95.9%)',
-    background1: '#0F1624',
-    accent1: 'hsl(34.9,98.6%,72.9%)',
-    button: 'hsl(205.1,100%,36.1%)',
-    background2: 'hsl(232.7,27.3%,23.7%)',
+    primary: '#a3076a',
+    background: '#1f2430',
+    light: '#d4d4d6',
   },
   breakpoints: {
     sm: 'screen and (max-width: 640px)',
