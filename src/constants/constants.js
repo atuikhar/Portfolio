@@ -10,7 +10,7 @@ export const myworks = [
   },
   {
     title: 'Art',
-    description: 'Cradle of Arts. ',
+    description: 'Art Gallery Portfolio. ',
     image: '/Art.jpg',
     tags: ['MongoDB', 'Express', 'React', 'Node'],
     source: 'https://github.com/atuikhar/AteoArtPortfolio',

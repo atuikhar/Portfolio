@@ -21,8 +21,8 @@ const HeaderVariants = {
   },
 };
 
-const Header = () => (
-  <Container>
+const Header = (props) => (
+  <Container id='top'>
     <Wrapper>
       <motion.div
         variants={HeaderVariants}

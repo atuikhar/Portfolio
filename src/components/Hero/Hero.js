@@ -4,7 +4,7 @@ import { Avatar } from '../Avatar/Image';
 
 const Hero = (props) => {
   return (
-    <>
+    <div>
       <Avatar />
       <Section>
         <HeroSection>
@@ -20,7 +20,7 @@ const Hero = (props) => {
           </SectionText>
         </HeroSection>
       </Section>
-    </>
+    </div>
   );
 };
 

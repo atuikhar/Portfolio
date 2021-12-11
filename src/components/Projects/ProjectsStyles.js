@@ -73,6 +73,7 @@ export const Card = styled.div`
   padding-bottom: ${(props) => props.theme.spacing.medium};
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
+    margin-top: ${(props) => props.theme.spacing.medium};
   }
 `;
 export const TitleContent = styled.div`

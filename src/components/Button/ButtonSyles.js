@@ -1,13 +1,5 @@
-// import { Button } from '@mui/material';
 import styled from 'styled-components';
 
-// export const Btn = styled(Button)`
-//   background: ${(props) => props.theme.colors.background};
-//   width: 10vw;
-//   &:hover {
-//     background: ${(props) => props.theme.colors.background};
-//   }
-// `;
 export const Button = styled.button`
   background: transparent;
   border-radius: 3px;
@@ -15,7 +7,8 @@ export const Button = styled.button`
   background: ${(props) => props.theme.colors.background};
   margin: 0.5em 1em;
   padding: 0.7em 1em;
-  width: 10vw;
+  width: 20vw;
+  cursor: pointer;
 `;
 
 export const SectionText = styled.p`
