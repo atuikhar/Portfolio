@@ -1,5 +1,4 @@
 import React from 'react';
-import { Grid } from '@mui/material';
 import {
   Section,
   SectionTitle,
@@ -24,7 +23,7 @@ const Project = () => (
         {myworks.map((p, i) => {
           return (
             <Card key={i}>
-              <Img src={p.image} height={200} width={300} />
+              <Img src='/images/Art.jpg' height={200} width={400} />
               <TitleContent>
                 <Header>{p.title}</Header>
               </TitleContent>

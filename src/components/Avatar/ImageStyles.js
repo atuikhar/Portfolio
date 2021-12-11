@@ -13,7 +13,7 @@ export const ImageContainer = styled(Container)`
   justify-content: center;
 `;
 
-export const Img = styled.img`
+export const Img = styled(Image)`
   border-radius: 50%;
   object-fit: cover;
   opacity: 0.8;
