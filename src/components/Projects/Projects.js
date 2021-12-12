@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
   Section,
   SectionTitle,
@@ -15,12 +16,6 @@ import {
 } from './ProjectsStyles';
 import { myworks } from '../../constants/constants';
 
-const myLoader = ({ src, width, quality }) => {
-  return `https://res.cloudinary.com/dzarf3lhh/image/upload/v1639304173/images/${src}?w=${width}&q=${
-    quality || 75
-  }`;
-};
-
 const Project = () => (
   <>
     <Section id='project'>
@@ -29,12 +24,7 @@ const Project = () => (
         {myworks.map((p, i) => {
           return (
             <Card key={i}>
-              <Img
-                loader={myLoader}
-                src='Shop_cfk42k.jpg'
-                height={200}
-                width={400}
-              />
+              <Img src='/Shop_vaqlqb.jpg' height={200} width={400} />
               <TitleContent>
                 <Header>{p.title}</Header>
               </TitleContent>
