@@ -15,6 +15,12 @@ import {
 } from './ProjectsStyles';
 import { myworks } from '../../constants/constants';
 
+const myLoader = ({ src, width, quality }) => {
+  return `https://res.cloudinary.com/dzarf3lhh/image/upload/v1639304173/images/${src}?w=${width}&q=${
+    quality || 75
+  }`;
+};
+
 const Project = () => (
   <>
     <Section id='project'>
@@ -24,7 +30,8 @@ const Project = () => (
           return (
             <Card key={i}>
               <Img
-                src='https://res.cloudinary.com/dzarf3lhh/image/upload/v1639304186/images/Shop_cfk42k.jpg'
+                loader={myLoader}
+                src='Shop_cfk42k.jpg'
                 height={200}
                 width={400}
               />
