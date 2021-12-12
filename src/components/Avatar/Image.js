@@ -23,7 +23,7 @@ export const Avatar = () => {
           animate='animate'
           whileHover='hover'
         >
-          <Img src='/images/Art.jpg' height={200} width={200} />
+          <Img src='/images/Art.jpeg' height={200} width={200} />
         </motion.div>
       </ImageContainer>
     </ImageWrapper>

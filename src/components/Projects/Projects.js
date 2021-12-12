@@ -23,7 +23,7 @@ const Project = () => (
         {myworks.map((p, i) => {
           return (
             <Card key={i}>
-              <Img src='/images/Art.jpg' height={200} width={400} />
+              <Img src={p.image} height={200} width={400} />
               <TitleContent>
                 <Header>{p.title}</Header>
               </TitleContent>

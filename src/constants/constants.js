@@ -2,7 +2,7 @@ export const myworks = [
   {
     title: 'ThriftShop',
     description: 'Online Shopping Site.',
-    image: '/images/MiniShop.jpg',
+    image: '/images/MiniShop.jpeg',
     tags: ['MongoDB', 'Express', 'React', 'Node'],
     source: 'https://github.com/atuikhar/ThriftShop.v1',
     visit: 'https://google.com',
@@ -11,7 +11,7 @@ export const myworks = [
   {
     title: 'Art',
     description: 'Art Gallery Portfolio. ',
-    image: '/images/Art.jpg',
+    image: '/images/Art.jpeg',
     tags: ['MongoDB', 'Express', 'React', 'Node'],
     source: 'https://github.com/atuikhar/AteoArtPortfolio',
     visit: 'https://ateoart.herokuapp.com/',
@@ -20,7 +20,7 @@ export const myworks = [
   {
     title: 'Shop(BCA Project)',
     description: 'Online Shop. ',
-    image: '/images/Shop.jpg',
+    image: '/images/Shop.jpeg',
     tags: ['JavaScript', 'Express', 'Node'],
     source: 'https://github.com/atuikhar/Shop-BCA-Project',
     visit: 'https://thriftshop-1.herokuapp.com/',
