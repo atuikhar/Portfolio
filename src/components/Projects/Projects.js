@@ -23,7 +23,11 @@ const Project = () => (
         {myworks.map((p, i) => {
           return (
             <Card key={i}>
-              <Img src={p.image} height={200} width={400} />
+              <Img
+                src='https://res.cloudinary.com/dzarf3lhh/image/upload/v1639304186/images/Shop_cfk42k.jpg'
+                height={200}
+                width={400}
+              />
               <TitleContent>
                 <Header>{p.title}</Header>
               </TitleContent>

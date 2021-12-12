@@ -23,7 +23,11 @@ export const Avatar = () => {
           animate='animate'
           whileHover='hover'
         >
-          <Img src='/images/Art.jpeg' height={200} width={200} />
+          <Img
+            src='https://res.cloudinary.com/dzarf3lhh/image/upload/v1639304173/images/Art_t0efwm.jpg'
+            height={200}
+            width={200}
+          />
         </motion.div>
       </ImageContainer>
     </ImageWrapper>
