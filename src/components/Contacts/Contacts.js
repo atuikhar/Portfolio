@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { RiUserSearchFill } from 'react-icons/ri';
-import { Grid, TableCell } from '@mui/material';
+import { Grid } from '@mui/material';
 import { Section, SectionText, SectionTitle } from './ContactStyles';
 import {
   FaGithubSquare,
@@ -12,107 +12,73 @@ import {
 } from 'react-icons/fa';
 import { GrMail } from 'react-icons/gr';
 
-const Contacts = (props) => (
-  <Section id='contact'>
-    <SectionTitle>Contacts</SectionTitle>
-    <SectionText>
-      <RiUserSearchFill size={50} />
-      Look Me Up
-    </SectionText>
+const Contacts = (props) => {
+  return (
+    <Section id='contact'>
+      <SectionTitle>Contacts</SectionTitle>
+      <SectionText>
+        <RiUserSearchFill size={50} />
+        Look Me Up
+      </SectionText>
 
-    <Grid container spacing={2}>
-      <Grid
-        item
-        xs={12}
-        md={4}
-        sx={{ display: 'flex', justifyContent: 'center' }}
-      >
-        <TableCell
-          sx={{ border: 0, textAlign: 'center' }}
-          component='th'
-          scope='row'
+      <Grid container>
+        <Grid
+          item
+          xs={12}
+          md={4}
+          sx={{ display: 'block', justifyContent: 'center' }}
         >
           <GrMail size={40} color='#a20869' />
           <SectionText>atuikhar@gmail.com</SectionText>
-        </TableCell>
-      </Grid>
-      <Grid
-        item
-        xs={12}
-        md={4}
-        sx={{ display: 'flex', justifyContent: 'center' }}
-      >
-        <TableCell
-          sx={{ border: 0, textAlign: 'center' }}
-          component='th'
-          scope='row'
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          md={4}
+          sx={{ display: 'block', justifyContent: 'center' }}
         >
           <FaTwitter size={40} color='#a20869' />
           <SectionText>@alaopa_tuikhar</SectionText>
-        </TableCell>
-      </Grid>
-      <Grid
-        item
-        xs={12}
-        md={4}
-        sx={{ display: 'flex', justifyContent: 'center' }}
-      >
-        <TableCell
-          sx={{ border: 0, textAlign: 'center' }}
-          component='th'
-          scope='row'
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          md={4}
+          sx={{ display: 'block', justifyContent: 'center' }}
         >
           <FaGithubSquare size={40} color='#a20869' />
           <SectionText>atuikhar</SectionText>
-        </TableCell>
-      </Grid>
-      <Grid
-        item
-        xs={12}
-        md={4}
-        sx={{ display: 'flex', justifyContent: 'center' }}
-      >
-        <TableCell
-          sx={{ border: 0, textAlign: 'center' }}
-          component='th'
-          scope='row'
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          md={4}
+          sx={{ display: 'block', justifyContent: 'center' }}
         >
           <FaLinkedin size={40} color='#a20869' />
           <SectionText>atuikhar</SectionText>
-        </TableCell>
-      </Grid>
-      <Grid
-        item
-        xs={12}
-        md={4}
-        sx={{ display: 'flex', justifyContent: 'center' }}
-      >
-        <TableCell
-          sx={{ border: 0, textAlign: 'center' }}
-          component='th'
-          scope='row'
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          md={4}
+          sx={{ display: 'block', justifyContent: 'center' }}
         >
           <FaFacebook size={40} color='#a20869' />
           <SectionText>atuikhar</SectionText>
-        </TableCell>
-      </Grid>
-      <Grid
-        item
-        xs={12}
-        md={4}
-        sx={{ display: 'flex', justifyContent: 'center' }}
-      >
-        <TableCell
-          sx={{ border: 0, textAlign: 'center' }}
-          component='th'
-          scope='row'
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          md={4}
+          sx={{ display: 'block', justifyContent: 'center' }}
         >
           <FaInstagram size={40} color='#a20869' />
           <SectionText>atuikhar</SectionText>
-        </TableCell>
+        </Grid>
       </Grid>
-    </Grid>
-  </Section>
-);
+    </Section>
+  );
+};
 
 export default Contacts;

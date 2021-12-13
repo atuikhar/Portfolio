@@ -22,7 +22,7 @@ const Technologies = () => (
     <SectionText>(MERN Stack Developer)</SectionText>
     {tech.map((t, i) => {
       return (
-        <Container>
+        <Container key={i}>
           <List>
             <ListItem>
               <picture style={{ textAlign: 'center' }}>
@@ -30,11 +30,9 @@ const Technologies = () => (
               </picture>
               <ListContainer>
                 <ListTitle>Front-End</ListTitle>
-                <ListParagraph key={i}>
-                  {t.frontEnd.map((f, i) => {
-                    return <ListParagraph key={i}>{f}</ListParagraph>;
-                  })}
-                </ListParagraph>
+                {t.frontEnd.map((f, i) => {
+                  return <ListParagraph key={i}>{f}</ListParagraph>;
+                })}
               </ListContainer>
             </ListItem>
             <ListItem>
@@ -43,11 +41,9 @@ const Technologies = () => (
               </picture>
               <ListContainer>
                 <ListTitle>Back-End</ListTitle>
-                <ListParagraph key={i}>
-                  {t.backEnd.map((f, i) => {
-                    return <ListParagraph key={i}>{f}</ListParagraph>;
-                  })}
-                </ListParagraph>
+                {t.backEnd.map((f, i) => {
+                  return <ListParagraph key={i}>{f}</ListParagraph>;
+                })}
               </ListContainer>
             </ListItem>
             <ListItem>
@@ -56,11 +52,9 @@ const Technologies = () => (
               </picture>
               <ListContainer>
                 <ListTitle>Android & IOS</ListTitle>
-                <ListParagraph>
-                  {t.mobile.map((f, i) => {
-                    return <ListParagraph key={i}>{f}</ListParagraph>;
-                  })}
-                </ListParagraph>
+                {t.mobile.map((f, i) => {
+                  return <ListParagraph key={i}>{f}</ListParagraph>;
+                })}
               </ListContainer>
             </ListItem>
           </List>

@@ -64,7 +64,6 @@ export const ListItem = styled.li`
   color: ${(props) => props.theme.colors.primary};
 
   @media ${(props) => props.theme.breakpoints.md} {
-    max-width: 203px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -75,7 +74,7 @@ export const ListItem = styled.li`
 `;
 
 export const Section = styled(Container)`
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   padding: ${(props) => props.theme.spacing.large};
   background: ${(props) => props.theme.colors.background};
   border-radius: 20px;
@@ -90,8 +89,8 @@ export const Section = styled(Container)`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 16px 16px 0;
-    width: calc(100vw - 32px);
     flex-direction: column;
+    margin-bottom: 10px;
   }
 `;
 
@@ -102,7 +101,6 @@ export const SectionTitle = styled.h2`
     #aa076b 18.77%,
     rgba(97, 4, 95, 1) 60.15%
   );
-
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -110,7 +108,6 @@ export const SectionTitle = styled.h2`
 
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: ${(props) => (props.main ? '56px' : '48px')};
-    line-height: ${(props) => (props.main ? '56px' : '48px')};
     margin-bottom: 12px;
     padding: ${(props) => (props.main ? '40px 0 12px' : '0')};
   }
@@ -119,7 +116,6 @@ export const SectionTitle = styled.h2`
     font-size: 32px;
     line-height: 40px;
     font-size: ${(props) => (props.main ? '28px' : '32px')};
-    line-height: ${(props) => (props.main ? '32px' : '40px')};
     margin-bottom: 8px;
     padding: ${(props) => (props.main ? '16px 0 8px' : '0')};
     max-width: 100%;

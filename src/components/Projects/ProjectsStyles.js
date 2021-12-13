@@ -3,7 +3,7 @@ import { Container } from '@mui/material';
 import Image from 'next/image';
 
 export const Section = styled(Container)`
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   padding: ${(props) => props.theme.spacing.large};
   background: ${(props) => props.theme.colors.background};
   border-radius: 20px;
@@ -15,7 +15,7 @@ export const Section = styled(Container)`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 16px 16px 0;
-    width: calc(100vw - 32px);
+    margin-bottom: 10px;
   }
 `;
 
@@ -101,11 +101,11 @@ export const List = styled.ul`
   margin: 5px;
 `;
 
-export const ExternalLinks = styled.a`
+export const ExternalLinks = styled.button`
   color: ${(props) => props.theme.colors.light};
   font-size: ${(props) => props.theme.typography.p};
-  font-weight: ${(props) => props.theme.weight.bold};
   padding: 10px 10px;
+  border: none;
   background: ${(props) => props.theme.colors.primary};
   background: -webkit-linear-gradient(to right, #61045f, #aa076b);
   background: linear-gradient(to right, #61045f, #aa076b);

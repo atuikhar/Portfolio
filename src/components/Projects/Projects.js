@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Grid } from '@mui/material';
 import {
   Section,
@@ -30,9 +31,9 @@ const Project = () => (
               <Tag>MERN</Tag>
             </TagList>
             <List>
-              <ExternalLinks href='https://github.com/atuikhar/ThriftShop.v1'>
-                Source Code
-              </ExternalLinks>
+              <Link href='https://github.com/atuikhar/ThriftShop.v1'>
+                <ExternalLinks>Source Code</ExternalLinks>
+              </Link>
             </List>
           </Card>
         </Grid>
@@ -45,9 +46,9 @@ const Project = () => (
               <Tag>MERN</Tag>
             </TagList>
             <List>
-              <ExternalLinks href='https://github.com/atuikhar/AteoArtPortfolio'>
-                Source Code
-              </ExternalLinks>
+              <Link href='https://github.com/atuikhar/AteoArtPortfolio'>
+                <ExternalLinks>Source Code</ExternalLinks>
+              </Link>
             </List>
           </Card>
         </Grid>
@@ -60,9 +61,9 @@ const Project = () => (
               <Tag>JavaScript</Tag>
             </TagList>
             <List>
-              <ExternalLinks href='https://github.com/atuikhar/Shop-BCA-Project'>
-                Source Code
-              </ExternalLinks>
+              <Link href='https://github.com/atuikhar/Shop-BCA-Project'>
+                <ExternalLinks>Source Code</ExternalLinks>
+              </Link>
             </List>
           </Card>
         </Grid>

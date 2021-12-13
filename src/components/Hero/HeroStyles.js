@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Container } from '@mui/material';
-import { motion } from 'framer-motion';
 
 export const Section = styled(Container)`
   display: flex;
@@ -27,7 +26,7 @@ export const HeroSection = styled(Container)`
   }
 `;
 
-export const SectionTitle = styled(motion.h2)`
+export const SectionTitle = styled.h2`
   font-weight: ${(props) => props.theme.weight.bold};
   font-size: ${(props) => props.theme.typography.header};
   background: ${(props) => props.theme.colors.background};
@@ -37,18 +36,15 @@ export const SectionTitle = styled(motion.h2)`
   margin-bottom: ${(props) => props.theme.spacing.small};
 
   @media ${(props) => props.theme.breakpoints.md} {
-    font-size: ${(props) => (props.main ? '56px' : '48px')};
-    line-height: ${(props) => (props.main ? '56px' : '48px')};
+    font-size: ${(props) => props.main && '45px'};
     margin-bottom: ${(props) => props.theme.spacing.small};
-    padding: ${(props) => (props.main ? '40px 0 12px' : '0')};
+    padding: ${(props) => props.main && '40px 0 12px'};
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: ${(props) => props.theme.typography.body};
     font-size: ${(props) => (props.main ? '28px' : '32px')};
-    line-height: ${(props) => (props.main ? '32px' : '40px')};
     margin-bottom: ${(props) => props.theme.spacing.small}
-    padding: ${(props) => (props.main ? '16px 0 8px' : '0')};
+    padding: ${(props) => props.main && '16px 0 8px'};
     max-width: 100%;
   }
 `;

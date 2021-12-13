@@ -1,17 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { AiOutlineCopyrightCircle } from 'react-icons/ai';
 import { FaRegArrowAltCircleUp } from 'react-icons/fa';
 import { FooterText } from './FooterStyles';
 
 const Footer = () => {
+  const handleClick = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
   return (
     <>
       <FooterText>
-        <div style={{ textAlign: 'end', paddingTop: '20px' }}>
-          <Link href='#top'>
-            <FaRegArrowAltCircleUp size={50} />
-          </Link>
+        <div style={{ textAlign: 'end' }}>
+          <FaRegArrowAltCircleUp onClick={() => handleClick()} size={50} />
         </div>
         <AiOutlineCopyrightCircle />
         atuikhar @2021
