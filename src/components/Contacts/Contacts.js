@@ -28,8 +28,10 @@ const Contacts = (props) => {
           md={4}
           sx={{ display: 'block', justifyContent: 'center' }}
         >
-          <GrMail size={40} color='#a20869' />
-          <SectionText>atuikhar@gmail.com</SectionText>
+          <div>
+            <GrMail size={40} color='#a20869' />
+            <SectionText>atuikhar@gmail.com</SectionText>
+          </div>
         </Grid>
         <Grid
           item
@@ -56,7 +58,7 @@ const Contacts = (props) => {
           sx={{ display: 'block', justifyContent: 'center' }}
         >
           <FaLinkedin size={40} color='#a20869' />
-          <SectionText>atuikhar</SectionText>
+          <SectionText>alaopa tuikhar</SectionText>
         </Grid>
         <Grid
           item
@@ -65,7 +67,7 @@ const Contacts = (props) => {
           sx={{ display: 'block', justifyContent: 'center' }}
         >
           <FaFacebook size={40} color='#a20869' />
-          <SectionText>atuikhar</SectionText>
+          <SectionText>alaopa tuikhar</SectionText>
         </Grid>
         <Grid
           item
