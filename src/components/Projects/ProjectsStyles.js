@@ -3,10 +3,12 @@ import { Container } from '@mui/material';
 import Image from 'next/image';
 
 export const Section = styled(Container)`
-  margin-bottom: ${(props) => props.theme.spacing.large};
+  margin-bottom: 100px;
   padding: ${(props) => props.theme.spacing.large};
   background: ${(props) => props.theme.colors.background};
   border-radius: 20px;
+  text-align: center;
+
   @media ${(props) => props.theme.breakpoints.md} {
     padding: 24px 48px 0;
   }
@@ -24,45 +26,36 @@ export const Img = styled(Image)`
 `;
 
 export const SectionTitle = styled.h2`
-  font-weight: ${(props) => props.theme.weight.bold};
   font-size: ${(props) => props.theme.typography.header};
   background: linear-gradient(
-    145.57deg,
-    #aa076b 1.77%,
-    rgba(97, 4, 95, 1) 25.15%
+    121.57deg,
+    #aa076b 18.77%,
+    rgba(97, 4, 95, 1) 60.15%
   );
+
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: ${(props) => props.theme.spacing.small};
+  padding: ${(props) => props.theme.spacing.medium};
 
   @media ${(props) => props.theme.breakpoints.md} {
-    font-size: ${(props) => props.theme.typography.text};
-    margin-bottom: ${(props) => props.theme.spacing.small};
-    padding: 40px 0 12px;
+    font-size: ${(props) => (props.main ? '56px' : '48px')};
+    line-height: ${(props) => (props.main ? '56px' : '48px')};
+    margin-bottom: 12px;
+    padding: ${(props) => (props.main ? '40px 0 12px' : '0')};
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: ${(props) => props.theme.typography.text};
-    margin-bottom: ${(props) => props.theme.spacing.small};
+    font-size: 32px;
+    line-height: 40px;
+    font-size: ${(props) => (props.main ? '28px' : '32px')};
+    line-height: ${(props) => (props.main ? '32px' : '40px')};
+    margin-bottom: 8px;
+    padding: ${(props) => (props.main ? '16px 0 8px' : '0')};
     max-width: 100%;
-    text-align: center;
   }
 `;
 
-export const GridContainer = styled(Container)`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: ${(props) => props.theme.spacing.large};
-  column-gap: ${(props) => props.theme.spacing.medium};
-  row-gap: ${(props) => props.theme.spacing.large};
-  @media ${(props) => props.theme.breakpoints.lg} {
-    display: flex;
-    flex-direction: column;
-    padding: ${(props) => props.theme.spacing.small};
-    padding-bottom: ${(props) => props.theme.spacing.large};
-  }
-`;
 export const Card = styled.div`
   border-radius: 20px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
@@ -70,13 +63,8 @@ export const Card = styled.div`
   padding-bottom: ${(props) => props.theme.spacing.medium};
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
-    margin-top: ${(props) => props.theme.spacing.medium};
+    margin-bottom: ${(props) => props.theme.spacing.large};
   }
-`;
-export const TitleContent = styled.div`
-  text-align: center;
-  z-index: 20;
-  width: 100%;
 `;
 
 export const Header = styled.h3`
@@ -85,17 +73,23 @@ export const Header = styled.h3`
   color: ${(props) => props.theme.colors.primary};
   padding: 8px 0;
   font-size: ${(props) => props.theme.typography.text};
+  @media ${(props) => props.theme.breakpoints.lg} {
+    font-size: ${(props) => props.theme.typography.body};
+  }
 `;
 
 export const CardInfo = styled.p`
   width: 100%;
-  padding: 0 20px;
   color: ${(props) => props.theme.colors.primary};
   font-size: ${(props) => props.theme.typography.body};
   font-weight: ${(props) => props.theme.weight.bold};
   text-align: center;
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: ${(props) => props.theme.typography.text};
+  }
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 10px;
+    font-size: ${(props) => props.theme.typography.body};
   }
 `;
 
@@ -125,15 +119,32 @@ export const ExternalLinks = styled.a`
 export const TagList = styled.ul`
   display: flex;
   justify-content: space-around;
-  padding: ${(props) => props.theme.spacing.medium};
+  padding: ${(props) => props.theme.spacing.small};
 
   }
 `;
 export const Tag = styled.li`
   color: ${(props) => props.theme.colors.primary};
-  font-size: ${(props) => props.theme.typography.body};
+  font-size: ${(props) => props.theme.typography.text};
   font-weight: ${(props) => props.theme.weight.bold};
 
   @media ${(props) => props.theme.breakpoints.md} {
-    font-size: ${(props) => props.theme.typography.p};
+    font-size: ${(props) => props.theme.typography.body};
+`;
+
+export const SectionText = styled.p`
+  font-size: ${(props) => props.theme.typography.text};
+  font-weight: ${(props) => props.theme.weight.bold};
+  padding-bottom: ${(props) => props.theme.spacing.large};
+  color: ${(props) => props.theme.colors.primary};
+  @media ${(props) => props.theme.breakpoints.md} {
+    max-width: 670px;
+    font-size: ${(props) => props.theme.typography.body};
+    padding-bottom: ${(props) => props.theme.spacing.medium};
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: ${(props) => props.theme.typography.body};
+    padding-bottom: ${(props) => props.theme.spacing.small};
+  }
 `;

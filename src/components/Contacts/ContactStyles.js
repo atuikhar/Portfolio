@@ -41,18 +41,17 @@ export const SectionTitle = styled.h2`
 `;
 
 export const SectionText = styled.p`
-  font-size: 20px;
-  color: rgba(170, 7, 107, 1);
+  font-size: ${(props) => props.theme.typography.body};
+  font-weight: ${(props) => props.theme.weight.bold};
+  padding-bottom: ${(props) => props.theme.spacing.large};
+  color: ${(props) => props.theme.colors.primary};
   @media ${(props) => props.theme.breakpoints.md} {
-    max-width: 670px;
-    font-size: 20px;
-    line-height: 32px;
-    padding-bottom: 24px;
+    font-size: ${(props) => props.theme.typography.body};
+    padding-bottom: ${(props) => props.theme.spacing.medium};
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 16px;
-    line-height: 24px;
-    padding-bottom: 16px;
+    font-size: ${(props) => props.theme.typography.body};
+    padding-bottom: ${(props) => props.theme.spacing.small};
   }
 `;

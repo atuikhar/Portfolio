@@ -1,6 +1,6 @@
 import React from 'react';
 import { GrStackOverflow } from 'react-icons/gr';
-import { FaReact } from 'react-icons/fa';
+import { MdComputer } from 'react-icons/md';
 import { ImMobile } from 'react-icons/im';
 import { Container } from '@mui/material';
 import {
@@ -19,14 +19,14 @@ import { tech } from '../../constants/constants';
 const Technologies = () => (
   <Section id='technology'>
     <SectionTitle>Technology</SectionTitle>
-    <SectionText>My Tech Stack from Font-End to Back-End.</SectionText>
+    <SectionText>(MERN Stack Developer)</SectionText>
     {tech.map((t, i) => {
       return (
         <Container>
           <List>
             <ListItem>
               <picture style={{ textAlign: 'center' }}>
-                <FaReact size='3rem' />
+                <MdComputer size={40} />
               </picture>
               <ListContainer>
                 <ListTitle>Front-End</ListTitle>
@@ -39,7 +39,7 @@ const Technologies = () => (
             </ListItem>
             <ListItem>
               <picture style={{ textAlign: 'center' }}>
-                <GrStackOverflow size='3rem' />
+                <GrStackOverflow size={40} />
               </picture>
               <ListContainer>
                 <ListTitle>Back-End</ListTitle>
@@ -52,7 +52,7 @@ const Technologies = () => (
             </ListItem>
             <ListItem>
               <picture style={{ textAlign: 'center' }}>
-                <ImMobile size='3rem' />
+                <ImMobile size={40} />
               </picture>
               <ListContainer>
                 <ListTitle>Android & IOS</ListTitle>

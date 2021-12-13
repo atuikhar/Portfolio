@@ -79,6 +79,8 @@ export const Section = styled(Container)`
   padding: ${(props) => props.theme.spacing.large};
   background: ${(props) => props.theme.colors.background};
   border-radius: 20px;
+  text-align: center;
+
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 1);
 
   @media ${(props) => props.theme.breakpoints.md} {
@@ -94,30 +96,33 @@ export const Section = styled(Container)`
 `;
 
 export const SectionTitle = styled.h2`
-  font-weight: ${(props) => props.theme.weight.bold};
   font-size: ${(props) => props.theme.typography.header};
   background: linear-gradient(
-    145.57deg,
-    #aa076b 1.77%,
-    rgba(97, 4, 95, 1) 25.15%
+    121.57deg,
+    #aa076b 18.77%,
+    rgba(97, 4, 95, 1) 60.15%
   );
 
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: ${(props) => props.theme.spacing.small};
+  padding: ${(props) => props.theme.spacing.medium};
 
   @media ${(props) => props.theme.breakpoints.md} {
-    font-size: ${(props) => props.theme.typography.text};
-    margin-bottom: ${(props) => props.theme.spacing.small};
-    padding: 40px 0 12px;
+    font-size: ${(props) => (props.main ? '56px' : '48px')};
+    line-height: ${(props) => (props.main ? '56px' : '48px')};
+    margin-bottom: 12px;
+    padding: ${(props) => (props.main ? '40px 0 12px' : '0')};
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: ${(props) => props.theme.typography.text};
-    margin-bottom: ${(props) => props.theme.spacing.small};
+    font-size: 32px;
+    line-height: 40px;
+    font-size: ${(props) => (props.main ? '28px' : '32px')};
+    line-height: ${(props) => (props.main ? '32px' : '40px')};
+    margin-bottom: 8px;
+    padding: ${(props) => (props.main ? '16px 0 8px' : '0')};
     max-width: 100%;
-    text-align: center;
   }
 `;
 

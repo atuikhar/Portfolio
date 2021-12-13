@@ -35,9 +35,9 @@ const Header = (props) => (
             drag
             dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
             dragElastic={1.3}
-            style={{ display: 'flex', alignItems: 'center', color: 'black' }}
+            style={{ display: 'flex', alignItems: 'center', color: '#02111a' }}
           >
-            <FaHandPeace drag size={50} />
+            <FaHandPeace drag='true' size={50} />
           </motion.a>
         </Link>
       </motion.div>

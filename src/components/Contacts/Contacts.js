@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { RiUserSearchFill } from 'react-icons/ri';
 import { Grid, TableCell } from '@mui/material';
 import { Section, SectionText, SectionTitle } from './ContactStyles';
 import {
@@ -14,6 +15,10 @@ import { GrMail } from 'react-icons/gr';
 const Contacts = (props) => (
   <Section id='contact'>
     <SectionTitle>Contacts</SectionTitle>
+    <SectionText>
+      <RiUserSearchFill size={50} />
+      Look Me Up
+    </SectionText>
 
     <Grid container spacing={2}>
       <Grid

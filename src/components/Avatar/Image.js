@@ -9,7 +9,7 @@ const AvatarVariants = {
     scale: 1.1,
     transition: {
       duration: 0.3,
-      yoyo: Infinity,
+      reverse: Infinity,
     },
   },
 };

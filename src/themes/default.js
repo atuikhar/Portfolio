@@ -5,8 +5,8 @@ export default {
   typography: {
     header: '6rem',
     text: '3rem',
-    body: '1.5rem',
-    p: '0.9rem',
+    body: '2rem',
+    p: '1.5rem',
   },
   weight: {
     bold: 'bold',
