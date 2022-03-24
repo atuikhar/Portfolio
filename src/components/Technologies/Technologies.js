@@ -19,7 +19,7 @@ import { tech } from '../../constants/constants';
 const Technologies = () => (
   <Section id='technology'>
     <SectionTitle>Technology</SectionTitle>
-    <SectionText>(MERN Stack Developer)</SectionText>
+    <SectionText>(MERN/MEAN Stack Developer)</SectionText>
     {tech.map((t, i) => {
       return (
         <Container key={i}>

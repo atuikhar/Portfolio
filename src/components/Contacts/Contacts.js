@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import { RiUserSearchFill } from 'react-icons/ri';
 import { Grid } from '@mui/material';
 import { Section, SectionText, SectionTitle } from './ContactStyles';

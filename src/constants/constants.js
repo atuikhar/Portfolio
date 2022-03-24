@@ -1,6 +1,6 @@
 export const tech = [
   {
-    frontEnd: ['JavaScript', 'React', 'Redux', 'NextJS', 'HTML', 'CSS'],
+    frontEnd: ['React', 'Angular'],
     backEnd: ['Node', 'MongoDB', 'Express'],
     mobile: ['React Native'],
   },

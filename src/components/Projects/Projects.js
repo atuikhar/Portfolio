@@ -17,12 +17,7 @@ import {
 import { motion } from 'framer-motion';
 
 const Project = () => {
-  const [isActive, setIsActive] = useState(false);
-
   const ImageVariants = {
-    animate: {
-      rotate: isActive ? 360 : 0,
-    },
     hover: {
       scale: 1.1,
       transition: {
@@ -40,11 +35,7 @@ const Project = () => {
       <Grid container spacing={2}>
         <Grid item xs={12} md={4}>
           <Card>
-            <motion.div
-              onClick={() => setIsActive(!isActive)}
-              variants={ImageVariants}
-              whileHover='hover'
-            >
+            <motion.div variants={ImageVariants} whileHover='hover'>
               <Img src='ThriftShop_qta5xx' height={200} width={400} />
             </motion.div>
             <Header>ThriftShop</Header>
@@ -61,11 +52,7 @@ const Project = () => {
         </Grid>
         <Grid item xs={12} md={4}>
           <Card>
-            <motion.div
-              onClick={() => setIsActive(!isActive)}
-              variants={ImageVariants}
-              whileHover='hover'
-            >
+            <motion.div variants={ImageVariants} whileHover='hover'>
               <Img src='art_tiw58o' height={200} width={400} />
             </motion.div>
             <Header>Art</Header>
@@ -82,20 +69,16 @@ const Project = () => {
         </Grid>
         <Grid item xs={12} md={4}>
           <Card>
-            <motion.div
-              onClick={() => setIsActive(!isActive)}
-              variants={ImageVariants}
-              whileHover='hover'
-            >
-              <Img src='Shop_vaqlqb' height={200} width={400} />
+            <motion.div variants={ImageVariants} whileHover='hover'>
+              <Img src='Google_fushdq.png' height={200} width={400} />
             </motion.div>
-            <Header>Shop(BCA Project)</Header>
-            <CardInfo className='card-info'>Online Shopping</CardInfo>
+            <Header>Google</Header>
+            <CardInfo className='card-info'>Google Home Clone</CardInfo>
             <TagList>
-              <Tag>JavaScript</Tag>
+              <Tag>React</Tag>
             </TagList>
             <List>
-              <Link href='https://github.com/atuikhar/Shop-BCA-Project'>
+              <Link href='https://github.com/atuikhar/google-home-page'>
                 <ExternalLinks>Source Code</ExternalLinks>
               </Link>
             </List>
@@ -103,11 +86,7 @@ const Project = () => {
         </Grid>
         <Grid item xs={12} md={4}>
           <Card>
-            <motion.div
-              onClick={() => setIsActive(!isActive)}
-              variants={ImageVariants}
-              whileHover='hover'
-            >
+            <motion.div variants={ImageVariants} whileHover='hover'>
               <Img src='portfolio_m88plu' height={200} width={400} />
             </motion.div>
             <Header>Portfolio</Header>
