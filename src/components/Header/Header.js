@@ -6,7 +6,7 @@ import { Container } from '@mui/material';
 
 import { Wrapper } from './HeaderStyles';
 
-const Header = (props) => {
+const Header = () => {
   const [isActive, setIsActive] = useState(false);
 
   const HeaderVariants = {

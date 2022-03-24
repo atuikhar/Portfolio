@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import Hero from '../components/Hero/Hero';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';

@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import Link from 'next/link';
+import React from 'react';
 import { AiOutlineCopyrightCircle } from 'react-icons/ai';
 import { FaRegArrowAltCircleUp } from 'react-icons/fa';
 import { FooterText } from './FooterStyles';

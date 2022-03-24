@@ -11,7 +11,7 @@ import {
 } from 'react-icons/fa';
 import { GrMail } from 'react-icons/gr';
 
-const Contacts = (props) => {
+const Contacts = () => {
   return (
     <Section id='contact'>
       <SectionTitle>Contacts</SectionTitle>

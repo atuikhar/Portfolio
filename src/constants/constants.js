@@ -1,3 +1,5 @@
+// bug: add more
+
 export const tech = [
   {
     frontEnd: ['React', 'Angular'],

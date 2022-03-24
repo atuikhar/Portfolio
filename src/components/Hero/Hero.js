@@ -1,8 +1,9 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { HeroSection, Section, SectionText, SectionTitle } from './HeroStyles';
 import { Avatar } from '../Avatar/Image';
 
-const Hero = (props) => {
+const Hero = () => {
   return (
     <div>
       <Avatar />
