@@ -7,8 +7,7 @@ const BgParticles = () => {
       <Particles
         id='tsparticles'
         style={{
-          position: 'absolute',
-          zIndex: -5,
+          zIndex: -1,
         }}
         options={{
           background: {
@@ -18,7 +17,7 @@ const BgParticles = () => {
           },
           fpsLimit: 60,
           interactivity: {
-            detectsOn: 'canvas',
+            detectsOn: 'window',
             events: {
               onClick: {
                 enable: true,
