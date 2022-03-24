@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import Particles from 'react-tsparticles';
 
 const BgParticles = () => {
@@ -7,7 +8,7 @@ const BgParticles = () => {
         id='tsparticles'
         style={{
           position: 'absolute',
-          zIndex: -1,
+          zIndex: -5,
         }}
         options={{
           background: {
