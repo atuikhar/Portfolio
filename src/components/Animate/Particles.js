@@ -7,7 +7,7 @@ const BgParticles = () => {
       <Particles
         id='tsparticles'
         style={{
-          zIndex: -1,
+          zIndex: -5,
         }}
         options={{
           background: {
