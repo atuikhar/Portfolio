@@ -2,4 +2,4 @@
 
 # MERN / MEAN
 
-# Built with NextJS
+# NEXTJS
