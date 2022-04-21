@@ -12,5 +12,4 @@ You will also see any lint errors in the console.
 
 ## STACK
 
-- [Nextjs](https://nextjs.org/)
-- [Material-UI](https://mui.com/)
+- [Nextjs](https://nextjs.org)
