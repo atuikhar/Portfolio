@@ -6,7 +6,7 @@ import { Button, SectionText } from './ButtonSyles';
 export const GlobalButton = ({ title, link }) => {
   return (
     <div>
-      <Link href={link}>
+      <Link href={link} passHref>
         <Button>
           <SectionText>{title}</SectionText>
         </Button>

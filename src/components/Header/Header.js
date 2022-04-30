@@ -36,7 +36,7 @@ const Header = () => {
           animate='animate'
           whileTap='tap'
         >
-          <Link href='/'>
+          <Link href='/' passHref>
             <motion.a
               drag={true}
               dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}

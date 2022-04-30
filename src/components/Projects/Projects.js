@@ -44,7 +44,7 @@ const Project = () => {
               <Tag>MERN</Tag>
             </TagList>
             <List>
-              <Link href='https://github.com/atuikhar/ThriftShop.v1'>
+              <Link passHref href='https://github.com/atuikhar/ThriftShop.v1'>
                 <ExternalLinks>Source Code</ExternalLinks>
               </Link>
             </List>
@@ -61,7 +61,10 @@ const Project = () => {
               <Tag>MERN</Tag>
             </TagList>
             <List>
-              <Link href='https://github.com/atuikhar/AteoArtPortfolio'>
+              <Link
+                passHref
+                href='https://github.com/atuikhar/AteoArtPortfolio'
+              >
                 <ExternalLinks>Source Code</ExternalLinks>
               </Link>
             </List>
@@ -78,7 +81,10 @@ const Project = () => {
               <Tag>React</Tag>
             </TagList>
             <List>
-              <Link href='https://github.com/atuikhar/google-home-page'>
+              <Link
+                passHref
+                href='https://github.com/atuikhar/google-home-page'
+              >
                 <ExternalLinks>Source Code</ExternalLinks>
               </Link>
             </List>
@@ -95,7 +101,7 @@ const Project = () => {
               <Tag>NextJS</Tag>
             </TagList>
             <List>
-              <Link href='https://github.com/atuikhar/Portfolio'>
+              <Link passHref href='https://github.com/atuikhar/Portfolio'>
                 <ExternalLinks>Source Code</ExternalLinks>
               </Link>
             </List>
