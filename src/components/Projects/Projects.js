@@ -107,6 +107,40 @@ const Project = () => {
             </List>
           </Card>
         </Grid>
+        <Grid item xs={12} md={4}>
+          <Card>
+            <motion.div variants={ImageVariants} whileHover='hover'>
+              <Img src='Gallery_t9io5a' height={200} width={400} />
+            </motion.div>
+            <Header>Gallery</Header>
+            <CardInfo className='card-info'>Art Gallery</CardInfo>
+            <TagList>
+              <Tag>ReactJS</Tag>
+            </TagList>
+            <List>
+              <Link passHref href='https://github.com/atuikhar/artist'>
+                <ExternalLinks>Source Code</ExternalLinks>
+              </Link>
+            </List>
+          </Card>
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <Card>
+            <motion.div variants={ImageVariants} whileHover='hover'>
+              <Img src='Joke_dnwofh' height={200} width={400} />
+            </motion.div>
+            <Header>Joke</Header>
+            <CardInfo className='card-info'>Joke(with PWA)</CardInfo>
+            <TagList>
+              <Tag>ReactJS</Tag>
+            </TagList>
+            <List>
+              <Link passHref href='https://github.com/atuikhar/joke'>
+                <ExternalLinks>Source Code</ExternalLinks>
+              </Link>
+            </List>
+          </Card>
+        </Grid>
       </Grid>
     </Section>
   );
