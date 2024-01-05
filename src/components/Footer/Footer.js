@@ -1,5 +1,4 @@
 import React from 'react';
-import { AiOutlineCopyrightCircle } from 'react-icons/ai';
 import { FaRegArrowAltCircleUp } from 'react-icons/fa';
 import { FooterText } from './FooterStyles';
 
@@ -12,10 +11,13 @@ const Footer = () => {
     <>
       <FooterText>
         <div style={{ textAlign: 'end' }}>
-          <FaRegArrowAltCircleUp onClick={() => handleClick()} size={50} />
+          <FaRegArrowAltCircleUp
+            style={{ cursor: 'pointer' }}
+            onClick={() => handleClick()}
+            size={50}
+          />
         </div>
-        <AiOutlineCopyrightCircle />
-        atuikhar @2021
+        atuikhar @2024
       </FooterText>
     </>
   );

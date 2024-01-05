@@ -61,11 +61,10 @@ export const ListParagraph = styled.p`
 export const ListItem = styled.li`
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
   color: ${(props) => props.theme.colors.primary};
-
   @media ${(props) => props.theme.breakpoints.md} {
   }
-
   @media ${(props) => props.theme.breakpoints.sm} {
     margin-bottom: ${(props) => props.theme.spacing.small};
     max-width: 320px;
@@ -79,9 +78,7 @@ export const Section = styled(Container)`
   background: ${(props) => props.theme.colors.background};
   border-radius: 20px;
   text-align: center;
-
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 1);
-
   @media ${(props) => props.theme.breakpoints.md} {
     padding: 24px 48px 0;
     flex-direction: column;

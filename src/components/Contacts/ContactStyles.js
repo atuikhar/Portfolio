@@ -42,7 +42,6 @@ export const SectionTitle = styled.h2`
 
 export const SectionText = styled.p`
   font-size: ${(props) => props.theme.typography.body};
-  font-weight: ${(props) => props.theme.weight.bold};
   padding-bottom: ${(props) => props.theme.spacing.large};
   color: ${(props) => props.theme.colors.primary};
   @media ${(props) => props.theme.breakpoints.md} {

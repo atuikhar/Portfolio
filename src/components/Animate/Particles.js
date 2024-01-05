@@ -3,13 +3,10 @@ import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 
 const particlesInit = async (main) => {
-  console.log(main);
-
   await loadFull(main);
 };
 
 const particlesLoaded = (container) => {
-  console.log(container);
 };
 const BgParticles = () => {
   return (

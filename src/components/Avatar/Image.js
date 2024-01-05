@@ -28,7 +28,7 @@ export const Avatar = () => {
           animate='animate'
           whileHover='hover'
         >
-          <Img src='key_rzphnx' height={200} width={200} />
+          <Img src='key_rzphnx' loading='eager' height={200} width={200} />
         </motion.div>
       </ImageContainer>
     </ImageWrapper>

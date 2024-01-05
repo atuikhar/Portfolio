@@ -17,7 +17,11 @@ const Hero = () => {
           </SectionTitle>
 
           <SectionText>
-            I Build and Design , Websites, Apps , PWA's, API's etc....
+            "I specialize in crafting and designing a diverse range of digital
+            solutions, including websites, mobile applications, progressive web
+            apps (PWAs), APIs, and more. With a passion for innovation and a
+            keen eye for design, I bring your ideas to life in the digital
+            realm."{' '}
           </SectionText>
         </HeroSection>
       </Section>

@@ -73,7 +73,12 @@ const Project = () => {
         <Grid item xs={12} md={4}>
           <Card>
             <motion.div variants={ImageVariants} whileHover='hover'>
-              <Img src='Google_fushdq.png' height={200} width={400} />
+              <Img
+                src='Google_fushdq.png'
+                loading='eager'
+                height={200}
+                width={400}
+              />
             </motion.div>
             <Header>Google</Header>
             <CardInfo className='card-info'>Google Home Clone</CardInfo>

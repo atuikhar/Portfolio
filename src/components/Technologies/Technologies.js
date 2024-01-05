@@ -2,6 +2,7 @@ import React from 'react';
 import { GrStackOverflow } from 'react-icons/gr';
 import { MdComputer } from 'react-icons/md';
 import { ImMobile } from 'react-icons/im';
+import { FaDev } from 'react-icons/fa';
 import { Container } from '@mui/material';
 import {
   List,
@@ -19,7 +20,7 @@ import { tech } from '../../constants/constants';
 const Technologies = () => (
   <Section id='technology'>
     <SectionTitle>Technology</SectionTitle>
-    <SectionText>(MERN/MEAN Stack Developer)</SectionText>
+    <SectionText>(Full Stack Developer)</SectionText>
     {tech.map((t, i) => {
       return (
         <Container key={i}>
@@ -53,6 +54,17 @@ const Technologies = () => (
               <ListContainer>
                 <ListTitle>Android & IOS</ListTitle>
                 {t.mobile.map((f, i) => {
+                  return <ListParagraph key={i}>{f}</ListParagraph>;
+                })}
+              </ListContainer>
+            </ListItem>
+            <ListItem>
+              <picture style={{ textAlign: 'center' }}>
+                <FaDev size={40} />
+              </picture>
+              <ListContainer>
+                <ListTitle>Others</ListTitle>
+                {t.others.map((f, i) => {
                   return <ListParagraph key={i}>{f}</ListParagraph>;
                 })}
               </ListContainer>
